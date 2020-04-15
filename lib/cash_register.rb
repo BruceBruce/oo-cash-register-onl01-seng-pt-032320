@@ -38,6 +38,7 @@ def apply_discount
    self.total = @total - @transactions.pop
    
   end
+  
 end
 
 
