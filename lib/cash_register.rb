@@ -35,7 +35,7 @@ def apply_discount
   end
   
   def void_last_transaction
-    
+    @items.delete_at(-1)
    self.total = @total - @transactions.pop
    
   end
