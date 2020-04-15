@@ -38,7 +38,7 @@ def apply_discount
    self.total = @total - @transactions.pop
    
   end
-  CashRegister.new
+  
 end
 
 
