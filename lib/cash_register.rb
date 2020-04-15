@@ -37,3 +37,4 @@ def apply_discount
   end
 end
 
+CashRegister.clear
