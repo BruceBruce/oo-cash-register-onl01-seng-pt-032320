@@ -37,4 +37,4 @@ def apply_discount
   end
 end
 
-
+cash_register.void_last_transaction
