@@ -34,7 +34,7 @@ def apply_discount
   
   def void_last_transaction
     quantity = self.items[2]
-    quantity.times do
+    quantity.1times do
       self.purchases.pop
       self.total -= self.items[1]
     end
