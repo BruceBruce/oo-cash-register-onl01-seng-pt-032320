@@ -34,7 +34,6 @@ def apply_discount
   
   def void_last_transaction
     @total -= @price
-    @item -= @total
   end
 end
 
