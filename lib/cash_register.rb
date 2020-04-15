@@ -36,7 +36,8 @@ def apply_discount
   
   def void_last_transaction
    
-   @total -= @priceself.total = @total - @transactions.pop
+   @total -= @price
+   self.total = @total - @transactions.pop
   end
 end
 
