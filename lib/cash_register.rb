@@ -33,7 +33,7 @@ def apply_discount
   end
   
   def void_last_transaction
-   self.total.to_f -= @total - @items.pop
+   self.total -= @total - @items.pop
   end
 end
 
