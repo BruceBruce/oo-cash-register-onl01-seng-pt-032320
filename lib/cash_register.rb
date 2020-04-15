@@ -3,7 +3,7 @@ class CashRegister
   attr_accessor :total, :discount, :price, :items
   
   def initialize(discount = 0)
-    @total = 0.0
+    @total = 0
     @discount = discount
     @items = []
     @transactions = []
@@ -26,7 +26,7 @@ end
 
 def apply_discount
     if @discount > 0
-      @to_take_off = (price * discount)/100.0
+      @to_take_off = (price * discount)/100
       @total -= @to_take_off
       return "After the discount, the total comes to $#{total}."
     else
@@ -40,5 +40,5 @@ def apply_discount
   end
   
 end
-
+CashRegister.new
 
