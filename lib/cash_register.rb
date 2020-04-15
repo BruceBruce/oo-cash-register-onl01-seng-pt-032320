@@ -33,8 +33,12 @@ def apply_discount
   end
   
   def void_last_transaction
-    self.@total = self.@total - self.last_transaction
+    quantity = self.items[2]
+    quantity.times do
+      self.purchases.pop
+      self.total -= self.items[1]
+    end
   end
 end
 
-cash_register.void_last_transaction
+
